@@ -1,3 +1,5 @@
+
+
 import { config } from '@fortawesome/fontawesome-svg-core';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -10,6 +12,7 @@ const Services = () => {
     useEffect(() => {
         document.title = ("Services")
         fetch('http://localhost:1000/services')
+
             .then(res => res.json())
             .then(data => {
                 setServices(data)
@@ -27,10 +30,10 @@ const Services = () => {
                     <div className="container mx-auto">
                         <div className="flex flex-col lg:flex-row items-center justify-between">
                             <h2 className="text-center text-6xl tracking-tighter font-bold">Up to
-                                50% Off
+                                25% Off
                             </h2>
                             <div className="space-x-2 text-center py-2 lg:py-0">
-                                <span> Use code:</span>
+                                <span> Promo code:</span>
                                 <span className="font-bold text-lg">photoCapture
                                 </span>
                             </div>

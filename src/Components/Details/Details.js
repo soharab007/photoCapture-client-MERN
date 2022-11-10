@@ -1,3 +1,5 @@
+
+
 import React, { useContext, useEffect, useState } from 'react';
 import { FaBookmark, FaCommentDots, FaShareAlt, FaStar } from 'react-icons/fa';
 import { Link, useLoaderData } from 'react-router-dom';
@@ -16,12 +18,15 @@ const Details = () => {
     const notify = () => toast.success("Successfully Review Added!");
     const { user } = useContext(AuthContext);
     const details = useLoaderData();
-    const [reviews, setReviews] = useState([]);
     const { img, _id, name, price, rating, description } = details;
+    const [reviews, setReviews] = useState([]);
+    const [displayRiv, setDisplayRiv] = useState(reviews);
+
 
 
     useEffect(() => {
         fetch(`http://localhost:1000/reviews?serviceId=${_id}`)
+
             .then(res => res.json())
             .then(data => {
                 setReviews(data);
@@ -54,7 +59,8 @@ const Details = () => {
             serviceImg: img,
         };
 
-        fetch(`http://localhost:1000/reviews`, {
+        fetch(`http://localhost:1000//reviews`, {
+
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -64,6 +70,7 @@ const Details = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.acknowledged) {
+
                     // setReviews([...review,])
                     notify();
                     form.reset();

@@ -2,12 +2,11 @@
 
 import React from 'react';
 import { FaDochub, FaHireAHelper } from 'react-icons/fa';
-// import { BsCamera } from 'react-icons/fa'
 
 const Footer = () => {
     return (
         <div>
-            <footer className="px-4 divide-y dark:bg-gray-800 dark:text-blue-300-100 bg-black">
+            <footer className=" bg-black text-white px-4 divide-y dark:bg-gray-800 dark:text-gray-100">
                 <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                     <div className="lg:w-1/3">
                         <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
@@ -15,13 +14,13 @@ const Footer = () => {
                                 <span className='text-5xl ml-5 text-green-50'><FaDochub /></span>
 
                             </div>
-                            <span className="self-center text-white text-2xl font-semibold">photoCapture</span>
+                            <span className="self-center text-2xl font-semibold">photoCapture</span>
                         </a>
                     </div>
                     <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
                         <div className="space-y-3">
-                            <h3 className="tracking-wide text-white uppercase dark:text-gray-50">Product</h3>
-                            <ul className="space-y-3 text-white">
+                            <h3 className="tracking-wide uppercase dark:text-gray-50">Product</h3>
+                            <ul className="space-y-1">
                                 <li>
                                     <a rel="noopener noreferrer" href="#">Features</a>
                                 </li>
@@ -37,8 +36,8 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="space-y-3">
-                            <h3 className="tracking-wide uppercase dark:text-gray-50 text-white">About Us</h3>
-                            <ul className="space-y-1 text-white">
+                            <h3 className="tracking-wide uppercase dark:text-gray-50">Company</h3>
+                            <ul className="space-y-1">
                                 <li>
                                     <a rel="noopener noreferrer" href="#">Privacy</a>
                                 </li>
@@ -51,8 +50,8 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="space-y-3">
-                            <h3 className="uppercase dark:text-gray-50 text-white">Developers</h3>
-                            <ul className="space-y-1 text-white">
+                            <h3 className="uppercase dark:text-gray-50">Developers</h3>
+                            <ul className="space-y-1">
                                 <li>
                                     <a rel="noopener noreferrer" href="#">Public API</a>
                                 </li>
@@ -65,7 +64,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="space-y-3">
-                            <div className="uppercase dark:text-gray-50 text-white">Social media</div>
+                            <div className="uppercase dark:text-gray-50">Social media</div>
                             <div className="flex justify-start space-x-3">
                                 <a rel="noopener noreferrer" href="#" title="Facebook" className="flex items-center p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-5 h-5 fill-current">
@@ -86,7 +85,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="py-6 text-sm text-center dark:text-gray-400 text-white"> Copyright ©All rights reserved.</div>
+                <div className="py-6 text-sm text-center dark:text-gray-400"> Copyright ©2022 all right reserved.</div>
             </footer>
         </div>
     );

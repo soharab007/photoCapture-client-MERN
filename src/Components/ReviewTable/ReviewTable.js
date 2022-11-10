@@ -1,9 +1,15 @@
+
+
 import React, { useState } from 'react';
 import { AuthContext } from '../Context/AuthProvider/AuthProvider';
 
 const ReviewTable = ({ review }) => {
     const { user } = useState(AuthContext);
     const { rating, customarName, email, massage, photoURL, serviceId, } = review;
+
+
+
+
 
     return (
         <div>
