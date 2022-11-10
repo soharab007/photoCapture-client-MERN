@@ -23,7 +23,7 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:1000/home/'),
+                loader: () => fetch('https://y-indol-two.vercel.app/home/'),
             },
             {
                 path: '/services',
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
             {
                 path: '/services/:id',
                 element: <Details></Details>,
-                loader: ({ params }) => fetch(`http://localhost:1000/services/${params.id}`)
+                loader: ({ params }) => fetch(`https://y-indol-two.vercel.app/services/${params.id}`)
             },
             {
                 path: '/myreviews',

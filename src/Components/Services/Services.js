@@ -11,7 +11,7 @@ const Services = () => {
 
     useEffect(() => {
         document.title = ("Services")
-        fetch('http://localhost:1000/services')
+        fetch('https://y-indol-two.vercel.app/services')
 
             .then(res => res.json())
             .then(data => {

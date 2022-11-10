@@ -25,7 +25,7 @@ const Details = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:1000/reviews?serviceId=${_id}`)
+        fetch(`https://y-indol-two.vercel.app/reviews?serviceId=${_id}`)
 
             .then(res => res.json())
             .then(data => {
@@ -59,7 +59,7 @@ const Details = () => {
             serviceImg: img,
         };
 
-        fetch(`http://localhost:1000//reviews`, {
+        fetch(`https://y-indol-two.vercel.app//reviews`, {
 
             method: 'POST',
             headers: {

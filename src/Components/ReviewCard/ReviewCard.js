@@ -27,7 +27,7 @@ const ReviewCard = ({ myreivew, handleUpdate, handleDelete }) => {
             rating: rating,
             massage: massage
         }
-        fetch(`http://localhost:1000/myreviews/${_id}`, {
+        fetch(`https://y-indol-two.vercel.app/myreviews/${_id}`, {
 
             method: 'PATCH',
             headers: {

@@ -35,7 +35,7 @@ const Login = () => {
                     email: user?.email
                 };
                 notify();
-                fetch(`http://localhost:1000/jwt`, {
+                fetch(`https://y-indol-two.vercel.app/jwt`, {
 
                     method: 'POST',
                     headers: {
@@ -64,7 +64,7 @@ const Login = () => {
                 const currentUser = {
                     email: user?.email
                 };
-                fetch(`http://localhost:1000/jwt`, {
+                fetch(`https://y-indol-two.vercel.app/jwt`, {
 
                     method: 'POST',
                     headers: {
